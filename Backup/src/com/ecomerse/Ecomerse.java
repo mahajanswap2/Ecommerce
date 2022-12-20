@@ -11,6 +11,8 @@ public void Ecomerse() {
 		System.out.println("1. Admin");
         System.out.println();
 		System.out.println("2. User registeration");
+		System.out.println();
+		System.out.println("3. Login");
 		System.out.println("-----------------------------");
 		System.out.println("Enter your choice-->>");
 		
@@ -29,8 +31,16 @@ public void Ecomerse() {
 	    User user=new User();
 		user.getuserdetails();
 		}
+		
+        else if(entry==3){
+		    Login login=new Login();
+			login.RegisterdUsers();
+		}
+		
 		else{
-		System.out.println("Invalid input");
+		System.out.println("Invalid input.. Please coorect input move on E-cart ");
+		Ecomerse e=new Ecomerse();
+		e.Ecomerse();
 		}
 	}
 }
